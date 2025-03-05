@@ -122,3 +122,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# dataset and output
+dataset/
+dataset_param/
+out/
+sup-fractal-class-250/

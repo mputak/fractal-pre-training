@@ -53,7 +53,6 @@ def dataset_labeled(config):
 
     dir_train = os.path.join(root, 'train')
     dir_val = os.path.join(root, 'val')
-
     paths_train = find_files(dir=dir_train, ext=extension)
     assert paths_train, f'No files found at {dir_train}'
     labels_train, label_dict = find_classes(paths_train)

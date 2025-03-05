@@ -158,7 +158,7 @@ def chaos_game(weights, borders, batch_size=128, res=512, iter=10000, iter_skip=
     # coords, pixels -> [n_frames, batch_size, 2]
 
     coords_init = np.random.uniform(
-        a=-1, b=1, size=(batch_size, 2)).astype(np.float32)
+        low=-1, high=1, size=(batch_size, 2)).astype(np.float32)
     for idx in numba.prange(n_frames):
         coords[idx] = coords_init
 
@@ -225,7 +225,7 @@ def chaos_game_binary(weights, borders, batch_size=128, res=512, iter=10000, ite
     # coords, pixels -> [n_frames, batch_size, 2]
 
     coords_init = np.random.uniform(
-        a=-1, b=1, size=(batch_size, 2)).astype(np.float32)
+        low=-1, high=1, size=(batch_size, 2)).astype(np.float32)
     for idx in numba.prange(n_frames):
         coords[idx] = coords_init
 

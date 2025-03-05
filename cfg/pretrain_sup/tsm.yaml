@@ -1,5 +1,5 @@
 DATA:
-  DATASET: SPECIFY_WITH_CMD
+  DATASET: /home/putak/university/10semester/code/fractal_video/sup-fractal-class-250
   EXTENSION: mp4
   VAL_MIN_STEPS: 2
   VAL_MAX_SEGS: 1
